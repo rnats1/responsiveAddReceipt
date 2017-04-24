@@ -1,0 +1,304 @@
+
+body{
+  font-family: Georgia,Times,serif;
+}
+
+#wellsImage{
+  color: #ffbc00;
+  font-weight: bold;
+  font-family: Georgia;
+  background-color: #CD1309;
+  text-align: center;
+  width: 100%;
+  line-height: 38px;
+  text-shadow: 0 0px 0 #f3f3f3;
+}
+
+#ccerHead{
+  line-height: 38px;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+.btnWidth{
+	width:100%;
+}
+
+.usePicBtncls{
+   background-image: linear-gradient(to bottom,#CD1309 0,#CD1309 100%);
+}
+
+.usePicBtncls.btn-default{
+   text-shadow: 0 1px 0 #ffbc00;
+   color: #ffbc00;
+}
+
+.usePicBtncls.btn-default:focus, .btn-default:hover
+{
+  background-position: 0 0px !important;
+}
+
+
+#imageSelect{
+  display: none;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+}
+
+
+.chargeDet{
+  font-size: x-large;
+  font-weight: bold;
+  color: #CD1309;
+}
+
+#reviewDet{
+  font-size: small;
+}
+
+#receiptImgDet{
+  font-size: large;
+  font-weight: bold;
+  padding: top:20px;
+  color: #5b9bde;
+  text-decoration-style: double;
+  text-decoration: underline;
+}
+
+.merchantDetDiv{
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width:95%;
+}
+
+.merchantDet{
+  color: #898181;
+  font-size: medium;
+}
+
+.merchantTxtBx{
+  border: 1px solid #ccc;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.merchantDetHead{
+  font-size: x-large;
+  font-weight: bold;
+  color: #CD1309;
+  margin-bottom: 20px;
+}
+
+#footerContainer{
+  margin-top: 60px;
+  margin-bottom: 15px;
+  background-color: #CD1309;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 38px;
+  font-size: large;
+  font-weight: bold;
+  color: #ffbc00;
+  text-shadow: 0 0px 0 #f3f3f3;
+  font-family: Georgia;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+#receiptDetContainer #overlayContainer #receiptDetContainer{
+  display:none;
+}
+
+
+/* input button css new working fine start */
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+}
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* input button css new working fine end */
+
+/* image width and height start */
+
+#imgCont
+{
+  display: block;
+  width: 100%;
+  position: RELATIVE;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  overflow: hidden;
+}
+
+img
+{
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  LEFT: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* image width and height end */
+
+
+/* sliding panel start */
+
+
+.ui-page-theme-a {
+  background: white;
+}
+
+.ui-input-text, .ui-input-search{
+  border-width: 0px;
+}
+
+.btn-default:active:hover{
+  background-color: #CD1309;
+}
+
+#usePicBtn{
+  background-color: #CD1309;
+  font-family: Georgia,Times,serif;
+  margin-top: 20px;
+}
+
+
+.fileUpload .ui-input-text {
+  margin: 0;
+}
+
+/* sliding panel end */
+
+/* table start  */
+
+ #oopTable.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #ffe1cf;
+ }
+
+/* start */
+.tickSym{
+  color: green;
+}
+
+.tickSym:before{
+  color: green;
+}
+   
+.closeSym{
+  color:red;
+}    
+
+/* end */
+
+
+.tickColor{
+  color: green;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+}
+
+.closeColor{
+  color: red;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+}
+    
+.smallCssBtn{
+  margin-top: 20px;
+  display: inline;
+  width: 65%;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: small;
+  margin-left: 7px;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.uploadPicBtnBgColor{
+  background-color: #CD1309;
+  background-image: linear-gradient(to bottom,#CD1309 0,#CD1309 100%);
+  background-position: 0 0px !important;
+  text-shadow: 0 1px 0 #ffbc00;
+  color: #ffbc00;
+}
+
+.reviewBtnBgColor{
+  
+  background-color: #fcab55;
+  background-image: linear-gradient(to bottom,#fcab55 0,#fcab55 100%);
+  background-position: 0 0px !important;
+  text-shadow: 0 1px 0 #fcab55;
+  color: black;
+  border: 1px solid #fcab55;
+}
+
+#submitBtn{
+  background-color: #CD1309;
+  font-family: Georgia,Times,serif;
+}
+
+
+#cancelBtn{
+  font-family: Georgia,Times,serif;
+}
+
+.floatLt{
+  float: left;
+}
+
+.fileUploadTable{
+  padding-left: 3px;
+}
+
+.fileUploadBtn{
+  border-radius: 7px;
+}
+
+
+/* table end */

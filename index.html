@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>Ccer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/addReceipt.css">
+
+  </head>
+  <body>
+   <div id="pageone">
+    <div class="container"> 
+      <form novalidate>
+          <div id="mainContainer">
+
+             <div id="profileContainer" class="form-group">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="row">
+                       <div class="col-xs-12 col-sm-12" id="wellsImage">WELLS FARGO</div>
+                  </div>
+                </div>
+               </div>
+               
+               <div class="row">
+                <div class="col-sm-12">
+                  <div class="row">
+                       <div class="col-xs-12 col-sm-12" id="ccerHead">
+                        <span class="box-shadow-menu"></span>OOP Expenses
+                       </div>
+                  </div>
+                </div>
+               </div>
+
+              </div> <!-- id="profileContainer" -->
+              
+              <hr size="20">
+
+              <!-- id="oopDetContainer" start -->
+              <div id="oopDetContainer" class="table-responsive">          
+                <table id="oopTable" class="table table-striped">
+                 <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="1">
+                      <td>Flight</td>
+                      <td><div id="amtVal_1"></div></td>
+                      <td> 
+                        <span class="glyphicon glyphicon-remove closeColor floatLt closeUploadCls" id="closeUpload_1" aria-hidden="true"></span>
+                        <div class="fileUpload fileUploadTable">
+                            <span class="uploadPicBtnBgColor smallCssBtn fileUploadBtn " id="uploadPicBtn_1">Upload</span>
+                            <input id="clickChoosePic_1" type="file" class="upload clickChoosePic" />
+                        </div>
+                      </td>
+                    </tr>      
+                    <tr id="2">
+                      <td>Gas</td>
+                      <td>$300.00</td>
+                      <td>
+                        <span class="glyphicon glyphicon-ok tickColor" aria-hidden="true"></span>
+                        <div class="reviewBtnBgColor smallCssBtn">Review</div>
+                      </td>
+                    </tr>
+                    <tr id="3">
+                      <td>Travel</td>
+                      <td><div id="amtVal_3"></div></td>
+                      <td> 
+                        <span class="glyphicon glyphicon-remove closeColor floatLt closeUploadCls" id="closeUpload_3" aria-hidden="true"></span>
+                        <div class="fileUpload fileUploadTable">
+                            <span class="uploadPicBtnBgColor smallCssBtn fileUploadBtn " id="uploadPicBtn_3">Upload</span>
+                            <input id="clickChoosePic_3" type="file" class="upload clickChoosePic" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="4">
+                      <td>Rental Car</td>
+                      
+                      <td>$450</td>
+                      <td>
+                        <span class="glyphicon glyphicon-ok tickColor" aria-hidden="true"></span>
+                        <div class="reviewBtnBgColor smallCssBtn">Review</div>
+                      </td>
+                    
+                      
+                    </tr>
+                    <tr id="5">
+                      <td>Restaurant</td>
+                      <td>$155</td>
+                      <td>
+                        <span class="glyphicon glyphicon-ok tickColor" aria-hidden="true"></span>
+                        <div class="reviewBtnBgColor smallCssBtn">Review</div>
+                      </td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+
+              <div>
+                <input type="hidden" id="clickIndex" value="">
+              </div>
+
+              <!-- id="oopDetContainer" end -->
+
+
+
+              <div id="receiptDetContainer">
+                <div class="row">
+                           <div class="col-xs-12 col-sm-12 chargeDet">Charge Details</div>
+                           <div class="col-xs-12 col-sm-12" id="reviewDet">Please review charge details before submitting</div>
+                </div>
+
+                <hr size="20">
+
+                <div class="row">
+                           <div class="col-xs-12 col-sm-12" id="receiptImgDet">Receipt Image</div>
+                </div>
+
+                <hr size="20">
+
+                <div class="row">
+                           <div class="col-xs-12 col-sm-12 merchantDetHead">Merchant Details</div>
+                </div>
+                
+                <div>
+                    <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="merchantName">Merchant Name</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="merchantName" value="Starbucks">
+                           </div>
+                    </div>
+
+                     <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="merchantAddress">Address</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="merchantAddress" value="31950, Dyer St, Union City, CA">
+                           </div>
+                    </div>
+
+                    <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="merchantCategory">Category</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="merchantCategory" value="Meal">
+                           </div>
+                    </div>
+
+                    <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="merchantGLcode">G/L Code</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="merchantGLcode" value="10252">
+                           </div>
+                    </div>
+                </div>
+
+                <hr size="20">
+
+                <div class="row">
+                           <div class="col-xs-12 col-sm-12 merchantDetHead">Expense Details</div>
+                </div>
+
+                <div>
+                    <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="expenseAmount">Amount</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="expenseAmount" value="15.82 USD">
+                           </div>
+                    </div>
+
+                     <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="transactionDate">Transaction Date</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="transactionDate" value="02/22/2017">
+                           </div>
+                    </div>
+
+                    <div class="row merchantDetDiv">
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <label for="expenseDesc">Description</label>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 merchantDet">
+                           <input type="text" class="merchantTxtBx" id="expenseDesc" value="">
+                           </div>
+                    </div>
+                </div>
+
+                <hr size="20">
+
+                <div class="row">
+                      <div class="col-sm-12">
+                        <div class="row">
+                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <button type="button" class="btn btn-default btn-lg btnWidth navbar-btn usePicBtncls " id="submitBtn">Submit</button>
+                            </div>
+
+                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <button type="button" class="btn btn-default btn-lg btnWidth navbar-btn " id="cancelBtn"> Cancel </button>
+                            </div>
+                        </div>
+                      </div>
+                     </div>
+
+              </div> <!-- id="receiptDetContainer" end -->
+
+              <div id="footerContainer">
+                 <div class="row">
+                    <div class="col-xs-12 col-sm-12" id="">Footer</div>
+                 </div>
+              </div> <!-- id="footerContainer" end -->
+
+          </div> <!-- id="mainContainer" -->
+      </form>
+    </div> <!-- class="container" -->
+
+    </div> <!-- data-role="page" for jquery panel -->  
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/addReceipt.js"></script>
+ 
+
+  </body>
+</html>
